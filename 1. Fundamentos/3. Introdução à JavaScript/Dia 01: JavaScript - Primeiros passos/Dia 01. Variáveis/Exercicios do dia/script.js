@@ -35,11 +35,32 @@ let valor1 = 19;
 let valor2 = 16;
 
 if(valor1 > valor2){
-    console.log(valor1 + 'é maior que ' + valor2);
+    console.log(valor1 + ' é maior que ' + valor2);
 }
 else if(valor1 === valor2) {
-    console.log(valor1 + 'é igual' + valor2);
+    console.log(valor1 + ' é igual ' + valor2);
 }
 else{
-    console.log(valor2 + 'é maior que ' + valor1);
+    console.log(valor2 + ' é maior que ' + valor1);
 }
+
+//Exercício 3
+//Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três variáveis com os valores que serão comparados.
+
+let numero1 = 14;
+let numero2 = 6;
+let numero3 = 8;
+
+if(numero1 > numero2 && numero1 > numero3){
+    console.log(numero1 + ' é o maior número');
+} else if(numero2 > numero1 && numero2 > numero3) {
+    console.log(numero2 + ' é o maior número');
+} else if(numero3 > numero1 && numero3 > numero2) {
+    console.log(numero3 + ' é o maior número');
+} else if(numero1 === numero2 && numero1 === numero3) {
+    console.log('os números são iguais');
+}
+else {
+    console.log('Insira um número válido')
+}
+
