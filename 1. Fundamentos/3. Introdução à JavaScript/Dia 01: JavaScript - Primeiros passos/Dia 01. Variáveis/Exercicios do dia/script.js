@@ -24,3 +24,5 @@ console.log(multiplicacao);
 let divisao = num1 / num2;
 console.log(divisao);
 
+let modulo = num1 % num2;
+console.log(modulo);
