@@ -17,3 +17,6 @@ console.log(adicao);
 
 let subtracao = num1 - num2;
 console.log(subtracao);
+
+let multiplicacao = num1 + num2;
+console.log(multiplicacao);
