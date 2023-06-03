@@ -14,3 +14,6 @@ let num2 = 9;
 
 let adicao = num1 + num2;
 console.log(adicao);
+
+let subtracao = num1 - num2;
+console.log(subtracao);
