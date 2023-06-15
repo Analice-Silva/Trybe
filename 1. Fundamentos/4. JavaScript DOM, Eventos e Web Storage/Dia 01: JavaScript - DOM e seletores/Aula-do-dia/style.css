@@ -1,0 +1,34 @@
+:root {
+    --corTrybe1: #E1F2D5;
+    --corTrybe2: #A0F046;
+    --corTrybe3: #1DB702;
+    --corTrybe4: #034422;
+    --redTrybe: #B51049;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--corTrybe1);
+    color: var(--corTrybe4);
+}
+
+.aprovado {
+    color: var(--corTrybe1);
+    background-color: var(--corTrybe3);
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.reprovado {
+    color: var(--corTrybe1);
+    background-color: var(--redTrybe);
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+hr {
+    border: 1px solid var(--corTrybe4);
+}
+
