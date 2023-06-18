@@ -1,4 +1,4 @@
-let ingredientsItems = [
+let itemsList = [
     '500g de feijão carioquinha cozido',
     '200g de toucinho',
     '1 concha de óleo',
@@ -10,14 +10,29 @@ let ingredientsItems = [
     '200g de farinha de mandioca'
 ];
 
-let ingredientsList = document.querySelector('.ingredients-list');
-for (let index = 0; index < ingredientsItems.length; index += 1) {
-    let ingredient = ingredientsItems[index];
+let lista = document.querySelector('.ingredients-list');
+
+for (let index = 0; index < itemsList.length; index += 1) {
+    let ingredient = itemsList[index];
     //console.log(ingredient);
 
-    let ingredientListItem = document.createElement('li');
-    ingredientListItem.innerText = ingredient;
-    
-    //console.log(ingredientListItem);
-    ingredientsList.appendChild(ingredientListItem);
+    let listaDeIngredientes = document.createElement('li');
+    listaDeIngredientes.innerText = ingredient;
+    listaDeIngredientes.className = 'list'
+    //console.log(listaDeIngredientes);
+    lista.appendChild(listaDeIngredientes);
+    //console.log(listaDeIngredientes)
 };
+
+//Removendo um item através do DOM
+let items = document.querySelectorAll('.list');
+//console.log(items);
+
+for (let index = 0; index < items.length; index += 1) {
+    let element = items[index];
+    //console.log(element);
+    if (element.innerText.includes('toucinho')) {
+       items.removeChild(element);
+    }
+}
+console.log(items);

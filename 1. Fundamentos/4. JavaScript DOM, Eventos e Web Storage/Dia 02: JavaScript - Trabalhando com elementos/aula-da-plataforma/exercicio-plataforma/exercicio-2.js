@@ -22,7 +22,7 @@ filhoDoprimeiroFilhoDoFilho.appendChild(criandoFilho);
 // A partir desse filho criado, acesse `terceiroFilho`.
 const acessTerceiroFilho = filhoDoprimeiroFilhoDoFilho;
 acessTerceiroFilho.parentElement;
-acessTerceiroFilho.nextElementSibling
-console.log(acessTerceiroFilho)
+acessTerceiroFilho.nextElementSibling;
+console.log(acessTerceiroFilho);
 
 
